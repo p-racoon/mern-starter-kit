@@ -1,0 +1,1 @@
+This is a starter pack for mern application and most of it would resemble the one created by brad-traversy [in this video] (https://youtu.be/v0t42xBIYIs)
