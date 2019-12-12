@@ -12,5 +12,6 @@ expressServer.get('/api/customers',(req,res)=>{
     ];
     res.json(customers);
 })
+expressServer.get('/',(req,res)=>res.send('boo'));
 
 expressServer.listen(port, ()=>console.log(`Server started at port ${port}`));

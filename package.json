@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Boilerplate for MERN applications",
   "main": "server.js",
-  "scripts":{
+  "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start && cd ..",
+    "client-install": "cd client && yarn",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\" "
   },
   "repository": "https://github.com/p-racoon/mern-starter-kit.git",
   "author": "prasham ashesh <prasham.ashesh@infosys.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "dependencies": {
     "concurrently": "^5.0.0",
     "express": "^4.17.1"
